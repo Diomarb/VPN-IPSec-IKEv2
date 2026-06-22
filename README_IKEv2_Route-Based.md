@@ -1,9 +1,7 @@
 # VPN Site-to-Site IPSec IKEv2 — Basada en Enrutamiento (VTI)
 
-**Estudiante:** Euni | **Matrícula:** 2024-1185  
-**Institución:** ITLA | **Asignatura:** Seguridad de Redes
-
 ---
+Link de video: https://youtu.be/sBzwy2DMWMk  
 
 ## Objetivo
 
@@ -13,11 +11,10 @@ Implementar una VPN Site-to-Site usando **IPSec IKEv2** con **Virtual Tunnel Int
 
 ## Topología
 
-```
-[PC1]──[SW1]──[R1]──────[ISP]──────[R2]──[SW2]──[PC2]
-                Tu0: 10.10.10.1/30 ↔ Tu0: 10.10.10.2/30
-                (IKEv2 + IPSec protege el VTI)
-```
+
+<img width="785" height="644" alt="image" src="https://github.com/user-attachments/assets/7c4ae039-6959-40ea-8301-8581fa074666" />
+
+
 
 ## Direccionamiento IP
 
@@ -174,8 +171,8 @@ show crypto ikev2 sa detailed
 show crypto ipsec sa
 show interface Tunnel0
 show ip route
-show clock
+show crypto session
 ```
 
 ---
-*Documento generado para fines académicos — ITLA 2024-1185*
+
